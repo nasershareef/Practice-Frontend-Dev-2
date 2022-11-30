@@ -1,0 +1,119 @@
+body{
+  Font-size : 14px;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.col-lg-6,.col-md-12{
+  padding: 0;
+}
+
+.container{
+  text-align: center;
+  margin: 100px auto;
+  background-color: white;
+  border-radius: 15px;
+  width: 700px;
+  height: 500px;
+  padding: 0;
+}
+
+.image1{
+  height: 500px;
+  width: 100%;
+  position: relative;
+  float: left;
+  display:inline-block;
+  border-radius: 15px 0 0 15px;
+}
+
+.image2{
+  display: none;
+}
+
+.product-name{
+  letter-spacing: 0.4rem;
+  display: block;
+  font-weight: bold;
+  color: gray;
+  margin: 40px 170px 0 0;
+}
+
+.product-main-info{
+  font-family: serif;
+  font-weight: bold;
+  text-align: left;
+  margin: 20px 70px 0 30px;
+}
+
+.product-info{
+  font-weight: 600;
+  text-align: left;
+  margin: 15px 70px 0 30px;
+  color: gray;
+  letter-spacing: 0.1rem;
+}
+
+.price{
+  margin: 20px 70px 0 30px;
+  text-align: left;
+}
+
+.cut-price{
+  position: relative;
+  left: -120px;
+  bottom: 30px;
+  float: right;
+}
+
+.buy-button{
+  margin: 25px auto;
+  position: relative;
+  width: 300px;
+  background-color: hsl(158, 36%, 37%);
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+.shopping-icon{
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 995px) {
+  .image1{
+    display: none;
+  }
+  .image2{
+    display: block;
+    border-radius: 15px 15px 0 0;
+    width: 100%
+  }
+
+
+  .container{
+    border-radius: 15px;
+    width: 700px;
+    height: 80%;
+  }
+
+  .product-name{
+    margin-right: 520px
+  }
+
+  .buy-button{
+    margin: 25px 30px;
+    width: 90%
+  }
+
+  .cut-price{
+    left: -450px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .product-name{
+    margin-right: 370px
+  }
+  .cut-price{
+    left: -300px;
+  }
+}
